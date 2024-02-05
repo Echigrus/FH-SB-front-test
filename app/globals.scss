@@ -1,0 +1,10 @@
+html, body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+
+    .ant-btn:where(:not(.ant-btn-circle)), .ant-input, .ant-input-group-addon {
+        border-radius: 2px !important;
+    }
+}

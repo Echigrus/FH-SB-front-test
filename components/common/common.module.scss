@@ -1,0 +1,50 @@
+.logo-big, .logo-small {
+    position: relative;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    color: #141414;
+    display: inline-block;
+    text-decoration: none;
+
+    &__main-text {
+        display: inline-flex;
+        line-height: 1;
+    }
+    &__main-text-red {
+        color: red;
+        position: relative;
+    }
+}
+
+.logo-big {
+    width: 206px;
+    height: 66px;
+
+    &__main-text {
+        font-size: 52px;
+    }
+    &__main-text-red {
+        margin-left: 3px;
+    }
+
+    &__bottom-text {
+        font-size: 12px;
+        margin-top: -7px;
+    }
+}
+
+.logo-small {
+    width: 146px;
+    height: 47px;
+
+    &__main-text {
+        font-size: 40px;
+    }
+    &__main-text-red {
+        margin-left: 3px;
+    }
+
+    &__bottom-text {
+        font-size: 9px;
+        margin-top: -5px;
+    }
+}
