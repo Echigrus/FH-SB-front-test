@@ -1,6 +1,3 @@
-'use client'
-
-import { useRouter } from "next/navigation";
 import { Button, Col, Row } from "antd";
 import Logo from "../common/logo";
 import styles from "./index.module.scss";
@@ -9,9 +6,9 @@ import { faUser } from "@fortawesome/free-regular-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import SearchBar from "./search-bar";
 import Categories from "./categories";
+import Link from "next/link";
 
 export default function Header() {
-    const router = useRouter();
 
     return (
         <div className={styles.header}>
@@ -19,20 +16,18 @@ export default function Header() {
                 <Logo size="big" />
                 <Row gutter={[13, 0]}>
                     <Col>
-                        <Button 
-                            onClick={() => router.push('/categories')}
-                        >
-                            Купить
-                        </Button>
+                        <Link href='/categories'>
+                            <Button>
+                                Купить
+                            </Button>
+                        </Link>
                     </Col>
                     <Col>
-                        <Button
-                            className={styles["green-btn"]}
-                            onClick={() => router.push('/sell')}
-                            type="primary"
-                        >
-                            Продать
-                        </Button>
+                        <Link href='/sell'>
+                            <Button className={styles["green-btn"]} type="primary">
+                                Продать
+                            </Button>
+                        </Link>
                     </Col>
                     <Col>
                         <Button 

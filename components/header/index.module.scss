@@ -22,6 +22,11 @@
 
 .green-btn {
     background-color: #389E0D;
+
+    &:hover {
+        background-color: #389E0D !important;
+        border-color: #4096ff;
+    }
 }
 
 .categories {
